@@ -171,6 +171,15 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: #fff;
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -179,6 +188,10 @@ a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
 }
 
 /* buttons */
@@ -307,6 +320,9 @@ a {
   background: #02cdf1;
 }
 
+.card--testimonial {
+  overflow: visible;
+}
 /* Plans */
 .plan__name {
   color: #fff;
@@ -451,5 +467,58 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+
+.testimonial {
+  padding: 3rem;
+  font-size: 2.2rem;
+  overflow: visible;
+}
+
+.testimonial .quote__author {
+  font-size: 2.4rem;
+}
+
+.testimonial .quote__company {
+  font-size: 2rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial .quote {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (max-width: 768px) {
+  .testimonial__image {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-top: 6rem;
+    margin-left: 6rem;
   }
 }
