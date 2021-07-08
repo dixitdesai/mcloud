@@ -209,7 +209,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -298,6 +298,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -379,7 +380,7 @@ a {
 }
 
 .plan--popular {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .plan--popular .card__header {
@@ -400,7 +401,7 @@ a {
 }
 
 .plan--popular:hover {
-  transform: scale(1.15);
+  transform: scale(1.12);
 }
 
 @media screen and (min-width: 1024px) {
@@ -418,6 +419,14 @@ a {
 
   .plan__description {
     font-size: 1.7rem;
+  }
+
+  .plan--popular {
+    transform: scale(1.1);
+  }
+
+  .plan--popular:hover {
+    transform: scale(1.15);
   }
 }
 
@@ -564,7 +573,7 @@ a {
 
 .callout {
   padding: 4rem;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .callout--primary {
@@ -780,7 +789,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    padding-top: 0;
+    padding-top: 2rem;
   }
 
   .hero__content {
@@ -800,7 +809,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -977,5 +986,18 @@ a {
 
   .footer__heading {
     font-size: 1.7rem;
+  }
+}
+
+/* Sign Up Callout */
+
+.callout-signup {
+  transform: translateY(5rem);
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 1140px) {
+  .callout-signup {
+    margin-bottom: 0;
   }
 }
