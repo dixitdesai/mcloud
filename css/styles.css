@@ -436,7 +436,6 @@ a {
 }
 
 .media__body .media__title {
-  color: #fff;
   margin-top: 0;
 }
 
@@ -643,6 +642,7 @@ a {
 }
 
 .block__header {
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -656,6 +656,10 @@ a {
 }
 
 .block--dark .block__heading {
+  color: #fff;
+}
+
+.block--dark .media__title {
   color: #fff;
 }
 
